@@ -2,12 +2,12 @@
   margin: 50px 0 70px;
 }
 
-.catalog-description {
+.catalog__description {
   letter-spacing: 2.25px;
   text-align: center;
 }
 
-.catalog-list {
+.catalog__list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -15,13 +15,14 @@
   padding: 0;
 }
 
-.catalog-item {
+.catalog__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1 0 400px;
 }
 
-.catalog-item-title {
+.catalog__item-title {
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 3px;
@@ -29,8 +30,24 @@
   color: #3b3b3b;
   margin: 0;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
-.catalog-item-price {
+.catalog__item-price {
   display: block;
+}
+
+.catalog__item-link {
+  color: #3b3b3b;
+  border-bottom: 1px solid #3b3b3b;
+
+  &:active {
+    color: #1dda01;
+  }
+
+  &:hover {
+    color: #1dda01;
+    text-shadow: 2px 2px 5px #ededed;
+    border-bottom: none;
+  }
 }

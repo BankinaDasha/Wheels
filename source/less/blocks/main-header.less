@@ -2,13 +2,13 @@
   margin: 30px 0;
 }
 
-.main-header-container {
+.main-header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.main-header-logo {
+.main-header__logo {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 30px;
   font-weight: 800;
@@ -18,18 +18,18 @@
   display: inline-block;
 }
 
-.main-header-nav {
+.main-header__nav {
   display: inline-block;
 }
 
-.main-header-nav-list {
+.main-header__nav-list {
   display: flex;
   list-style: none;
   justify-content: flex-end;
   margin: 0;
 }
 
-.main-header-nav-item {
+.main-header__nav-item {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -38,6 +38,14 @@
   margin-left: 90px;
 }
 
-.main-header-nav-link {
+.main-header__nav-link {
   color: #3b3b3b;
+
+  &:hover {
+    color: #1dda01;
+  }
+
+  &:active {
+    color: #0e0e0e;
+  }
 }
